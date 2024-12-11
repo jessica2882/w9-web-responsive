@@ -1,0 +1,35 @@
+body{
+    gap: 5px;
+    align-content: start;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+}
+.container{
+    display: grid;
+    background-color: rgb(22, 195, 214);
+    height: 50px;
+    text-align:center ;
+    align-content: center;
+}
+@media(max-width : 480px){
+    body{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+@media (min-width : 480px) and (max-width: 768px) {
+    body{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+    }
+  }
+ 
+  @media (min-width: 1000px) {
+    body{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+    }
+  }
+
+
+    
